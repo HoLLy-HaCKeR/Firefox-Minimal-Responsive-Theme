@@ -38,7 +38,8 @@
 :root:not([customizing]) #nav-bar toolbarspring {
 	display: none;
 }
-:root:not([customizing]) :hover>#nav-bar toolbarspring {
+:root:not([customizing]) :hover>#nav-bar toolbarspring,
+:root:not([customizing]) #navigator-toolbox:focus-within toolbarspring {
 	display: -moz-box;
 }
 
@@ -93,7 +94,8 @@ Remove borders everywhere, some code copied from edge style for firefox
 	background-color: transparent!important;
 }
 
-:root:not([customizing]) :hover #urlbar {
+:root:not([customizing]) :hover #urlbar,
+:root:not([customizing]) #navigator-toolbox:focus-within #urlbar {
 	background-color: rgba(100, 100, 100, 0.5)!important;
 }
 
