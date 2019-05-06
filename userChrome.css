@@ -34,6 +34,14 @@
 	font-size: 1.2em !important;
 }
 
+/* hide spacers when not hovered */
+:root:not([customizing]) #nav-bar toolbarspring {
+	display: none;
+}
+:root:not([customizing]) :hover>#nav-bar toolbarspring {
+	display: -moz-box;
+}
+
 /* Change tab max width */
 /*
 .tabbrowser-tab[fadein]:not([pinned]) {
@@ -259,3 +267,4 @@ toolbarspring {
 	min-width: 8px;
 	max-width: 8px;
 }
+
