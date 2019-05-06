@@ -4,7 +4,8 @@
 /* Contextual toolbar buttons, only show on hover, this is what matters, the rest of the file are just style tweaks I like
  */
 
-:root:not([customizing]) #nav-bar toolbarbutton {
+:root:not([customizing]) #nav-bar toolbarbutton,
+:root:not([customizing]) #nav-bar .urlbar-page-action {
 	margin-left: -28px !important;
 	opacity: 0 !important;
 	transform: scale(.85, .85) !important;
@@ -14,7 +15,8 @@
 
 :root:not([customizing]) :hover>#nav-bar toolbarbutton,
 :root:not([customizing]) #navigator-toolbox:focus-within #nav-bar toolbarbutton,
-:root:not([customizing]) :hover>#titlebar toolbarbutton {
+:root:not([customizing]) :hover>#titlebar toolbarbutton,
+:root:not([customizing]) :hover #nav-bar .urlbar-page-action {
 	transform: scale(1, 1) !important;
 	opacity: 1 !important;
 	margin-left: 0 !important;
