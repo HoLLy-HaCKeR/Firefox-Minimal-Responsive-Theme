@@ -94,6 +94,18 @@ Remove borders everywhere, some code copied from edge style for firefox
 }
 
 #urlbar {
+	border-radius: 5px!important;
+}
+
+:root:not([customizing]) :not(:hover) #urlbar {
+	background-color: transparent!important;
+}
+
+:root:not([customizing]) :hover #urlbar {
+	background-color: rgba(100, 100, 100, 0.5)!important;
+}
+
+#urlbar {
 	opacity: 1 !important;
 }
 
